@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_breeding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1951A"
+    tools:context=".Breeding">
+
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        android:id="@+id/compact_calendar_view"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="244dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:compactCalendarBackgroundColor="#F39C1C"
+        app:compactCalendarCurrentDayBackgroundColor="#B71C1C"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#E57373"
+        app:compactCalendarMultiEventIndicatorColor="#fff"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextColor="#fff"
+        app:compactCalendarTextSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/events_listview"
+        android:layout_width="391dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="11dp"
+        android:background="#F39C1C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compact_calendar_view"
+        app:layout_constraintVertical_bias="0.795" />
+
+    <Button
+        android:id="@+id/add_breeding_button"
+        android:layout_width="143dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="261dp"
+        android:layout_marginBottom="113dp"
+        android:backgroundTint="#E4FF9800"
+        android:drawableTint="#8BC34A"
+        android:text="@string/add_breeding"
+        android:textColor="#F8F4F8"
+        app:layout_constraintBottom_toTopOf="@+id/compact_calendar_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Dodaj wychów" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
